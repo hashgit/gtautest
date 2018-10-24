@@ -1,4 +1,104 @@
 .main {
     width: 80%;
-    margin: 0 auto;
+    margin: 40px auto;
+    border-radius: 10px;
+    background: white;
+    overflow: hidden;
+    box-shadow: 10px 10px 15px 2px lightgrey;
+}
+
+.topBar {
+    height: 150px;
+    display: table;
+    width: 100%;
+    background-color: #36253C;
+}
+
+.topIconContainer {
+    width: 10%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.topHeadingContainer {
+    width: 80%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.topActionContainer {
+    width: 10%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.topIcon {
+}
+
+.topHeading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2.3rem;
+    color: white;
+}
+
+.topAction {
+}
+
+.contentBox {
+    min-height: 400px;
+}
+
+.bottomPanel {
+    border-top: 3px solid lightgray;
+    height: 150px;
+    background-color: #f7f7f7;
+    display: flex;
+    width: 100%;
+}
+
+.topBar svg {
+    width: 75px;
+    height: 75px;
+}
+
+.topBar svg path {
+    fill: white;
+}
+
+.prevAction {
+    display: flex;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.nextAction {
+    display: flex;
+    vertical-align: middle;
+    text-align: right;
+    width: 50%;
+}
+
+.bottomPanel svg {
+    width: 75px;
+    height: 75px;
+    margin: auto;
+}
+
+.bottomPanel svg path {
+    fill: white;
+}
+
+.bottomPanel span {
+    display: inherit;
+}
+
+.bottomPanel .nextAction span {
+    margin: auto 0 auto auto;
+}
+
+.bottomPanel .prevAction svg {
+    transform: rotate(180deg);
 }
