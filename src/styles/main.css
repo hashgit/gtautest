@@ -93,6 +93,7 @@
 
 .bottomPanel span {
     display: inherit;
+    width: 20%;
 }
 
 .bottomPanel .nextAction span {
@@ -101,4 +102,21 @@
 
 .bottomPanel .prevAction svg {
     transform: rotate(180deg);
+}
+
+.bottomPanel>div>div {
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2.3rem;
+    color: white;
+}
+
+.prevText {
+    margin: auto auto auto 0;
+}
+
+.nextText {
+    margin: auto 0 auto auto;
+    width: auto;
 }
