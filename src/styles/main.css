@@ -49,6 +49,22 @@
 
 .contentBox {
     min-height: 400px;
+    padding: 20px;
+    display: flex;
+}
+
+.contentDescription {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    margin-left: 25px;
+}
+
+.thumbnail {
+    max-width: 500px;
+}
+
+.thumbContainer {
+    min-width: 500px;
 }
 
 .bottomPanel {
@@ -59,6 +75,12 @@
     width: 100%;
 }
 
+.topActionContainer button {
+    background-color: #36253C;
+    border-width: 0px;
+    cursor: pointer;
+}
+
 .topBar svg {
     width: 75px;
     height: 75px;
@@ -66,6 +88,10 @@
 
 .topBar svg path {
     fill: white;
+}
+
+.topBar .expandedIcon svg {
+    transform: rotate(180deg);
 }
 
 .prevAction {
@@ -88,7 +114,11 @@
 }
 
 .bottomPanel svg path {
-    fill: white;
+    fill:gray;
+}
+
+.bottomPanel .enabled svg path {
+    fill:green;
 }
 
 .bottomPanel span {
@@ -96,7 +126,12 @@
     width: 20%;
 }
 
-.bottomPanel .nextAction span {
+.bottomPanel button {
+    border-width: 0px;
+    background-color: #f7f7f7;
+}
+
+.bottomPanel .nextAction button {
     margin: auto 0 auto auto;
 }
 
@@ -109,7 +144,12 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 2.3rem;
-    color: white;
+    color: grey;
+}
+
+a {
+    color: green;
+    text-decoration: none;
 }
 
 .prevText {
@@ -119,4 +159,8 @@
 .nextText {
     margin: auto 0 auto auto;
     width: auto;
+}
+
+.enabled {
+    color: green;
 }
