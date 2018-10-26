@@ -7,6 +7,13 @@
     box-shadow: 10px 10px 15px 2px lightgrey;
 }
 
+@media only screen and (max-width: 375px) {
+    .main {
+        margin: 0;
+        width: 100%;
+    }
+}
+
 .topBar {
     height: 150px;
     display: table;
@@ -51,6 +58,7 @@
     min-height: 400px;
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .contentDescription {
@@ -63,16 +71,31 @@
     max-width: 500px;
 }
 
+@media only screen and (max-width: 375px) {
+    .thumbnail {
+        max-width: 350px;
+    }
+
+    .thumbContainer {
+        min-width: 350px;
+    }
+
+    .contentBox {
+        padding: 0;
+    }    
+}
+
 .thumbContainer {
     min-width: 500px;
 }
 
 .bottomPanel {
     border-top: 3px solid lightgray;
-    height: 150px;
+    min-height: 150px;
     background-color: #f7f7f7;
     display: flex;
     width: 100%;
+    justify-content: space-between;
 }
 
 .topActionContainer button {
@@ -86,6 +109,14 @@
     height: 75px;
 }
 
+@media only screen and (max-width: 768px) {
+    .topBar svg {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }    
+}
+
 .topBar svg path {
     fill: white;
 }
@@ -97,14 +128,12 @@
 .prevAction {
     display: flex;
     vertical-align: middle;
-    width: 50%;
 }
 
 .nextAction {
     display: flex;
     vertical-align: middle;
     text-align: right;
-    width: 50%;
 }
 
 .bottomPanel svg {
@@ -147,6 +176,44 @@
     color: grey;
 }
 
+@media only screen and (max-width: 768px) {
+    .bottomPanel>div>div {
+        font-size: 1.6rem;
+    }
+
+    .bottomPanel svg {
+        width: 35px;
+        height: 35px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .bottomPanel>div>div {
+        font-size: 1rem;
+    }
+    
+    .bottomPanel svg {
+        width: 35px;
+        height: 35px;
+        margin: auto;
+    }
+
+    .topHeading {
+        font-size: 1rem;
+    }
+
+    .topBar {
+        height: 70px;
+    }
+
+    .topBar svg {
+        width: 35px;
+        height: 35px;
+        margin: 10px;
+    }
+}
+
 a {
     color: green;
     text-decoration: none;
@@ -154,11 +221,13 @@ a {
 
 .prevText {
     margin: auto auto auto 0;
+    width: 50%;
 }
 
 .nextText {
     margin: auto 0 auto auto;
     width: auto;
+    width: 50%;
 }
 
 .enabled {
