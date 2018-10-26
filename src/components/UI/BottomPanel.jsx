@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import NavSvg from '../../svg/slider-arrow.svg';
 
 const BottomPanel = ({ pageIndex, totalPages, contents }) => {
-
     const prevEnabled = pageIndex > 0;
     const nextEnabled = pageIndex < totalPages - 1;
 

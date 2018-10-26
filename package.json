@@ -63,7 +63,7 @@
     "start": "node __doNotModify/scripts/start.js",
     "build": "node __doNotModify/scripts/build.js",
     "test": "node __doNotModify/scripts/test.js",
-    "lint": "eslint . --ext .js,.jsx"
+    "lint": "eslint ./src --ext .js,.jsx"
   },
   "eslintConfig": {
     "extends": "react-app"
